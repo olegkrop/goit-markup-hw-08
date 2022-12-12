@@ -69,34 +69,34 @@ a {
 }
 
 .container {
+  max-width: 480px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+  /*   @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+
+  } */
 }
 .container--header {
   display: flex;
   align-items: center;
-  min-height: 60px;
+  /*     min-height: 60px;
+  */
 }
 @media screen and (max-width: 767px) {
   .container--header {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
-    min-height: 80px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
   .container--footer {
     display: flex;
@@ -271,19 +271,56 @@ a {
 
 /* Features */
 .features__card {
+  height: 120px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--team-background);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  /*     display: flex;
   width: 270px;
   height: 120px;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  margin-right: 0;
-  background-color: var(--team-background);
+
+  background-color: var(--team-background); */
+}
+@media screen and (max-width: 767px) {
+  .features__card {
+    margin-top: 30px;
+  }
 }
 .features__list {
-  display: flex;
+  /*      display: flex;
   gap: 30px;
-  padding-left: 0;
+  padding-left: 0;  */
+}
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: 270px;
+    /*       & + & {
+            margin-left: 30px;
+          } */
+  }
 }
 .features__title {
   font-weight: 700;
@@ -299,10 +336,16 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.features__icon {
+  width: 70px;
+  height: 70px;
+}
 
 /* Skills */
-.skills {
-  padding: 0;
+@media screen and (max-width: 1199px) {
+  .skills {
+    display: none;
+  }
 }
 .skills__list {
   display: flex;

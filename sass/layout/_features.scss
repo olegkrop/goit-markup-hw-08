@@ -2,21 +2,53 @@
 .features {
 
   &__card {
+    height: 120px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--team-background);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      margin-top: 30px;
+    }
+    /*     display: flex;
     width: 270px;
     height: 120px;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-    margin-right: 0;
-    background-color: var(--team-background);
+
+    background-color: var(--team-background); */
   }
 
   &__list {
-    display: flex;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      justify-content: center;
+    }
+    /*      display: flex;
     gap: 30px;
-    padding-left: 0;
+    padding-left: 0;  */
   }
+
+  &__item {
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+
+/*       & + & {
+        margin-left: 30px;
+      } */
+    }
+  }
+
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -31,5 +63,10 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
   }
 }
