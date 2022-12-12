@@ -1,12 +1,30 @@
 /* Clients */
 
 .clients {
-
   &__list {
     display: flex;
     gap: 30px;
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+      @media screen and (min-width: $desktop) {
+        justify-content: center;
+      }
+    }
   }
 
+  &__item {
+
+    @media screen and (max-width: 767px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: $desktop) {
+      width: 170px;
+
+    }
+  }
   &__title {
     font-weight: 700;
     font-size: 36px;
@@ -18,11 +36,12 @@
   }
 
   &__link {
+        height: 92px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
+/*     width: 170px;
+ */    height: 92px;
     border: 1px solid var(--icon-color);
     color: var(--icon-color);
     background-color: var(--white-color);

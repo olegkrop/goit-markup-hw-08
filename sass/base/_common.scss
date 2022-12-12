@@ -9,20 +9,56 @@
   border: 0;
   clip: rect(0 0 0 0);
 }
+
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+  &--header {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    min-height: 80px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+
+    &--footer {
+      display: flex;
+    }
+  }
 }
+
 
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+  }
 }
+
+
+
 
 .current {
   color: var(--accent-color);
