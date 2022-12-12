@@ -1,0 +1,23 @@
+$mainFont: "Roboto";
+$secondaryFont: "Raleway";
+:root {
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --title-color: #212121;
+  --white-color: #fff;
+  --black-color: #000;
+  --hero-background: #2f303a;
+  --team-background: #f5f4fa;
+  --works-background: #eeeeee;
+  --dark-address: rgba(255, 255, 255, 0.6);
+  --icon-color: #afb1b8;
+  --icon-background: #ffffff10;
+  --overlay-background: rgba(33, 150, 243, 0.9);
+  --hero-button-active: #188ce8;
+  --email-color: rgba(255, 255, 255, 0.6);
+  --border-color: rgba(255, 255, 255, 0.3);
+  --button-shadow-color: rgba(0, 0, 0, 0.15);
+  --modal-button-color: rgba(0, 0, 0, 0.1);
+  --input-color: rgba(33, 33, 33, 0.2);
+  --comment-color: rgba(117, 117, 117, 0.5);
+}

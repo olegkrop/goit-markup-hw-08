@@ -1,0 +1,213 @@
+/* Modal */
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  padding: 40px;
+  width: 528px;
+  background-color: var(--white-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scaleX(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleX(0.5);
+}
+
+.modal__button-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--modal-button-color);
+  background-color: var(--white-color);
+  fill: var(--black-color);
+  cursor: pointer;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.modal__form-title {
+  margin: 0;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.modal__form {
+  display: block;
+  width: 100%;
+  height: 466px;
+}
+
+.modal__label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--label-color);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.171;
+  letter-spacing: 0.01em;
+}
+
+.modal__input-block {
+  margin: 0;
+  margin-bottom: 10px;
+  position: relative;
+  color: var(--black-color);
+}
+
+.modal__input {
+  display: block;
+  padding: 11px 12px 11px 42px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--input-color);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+
+.modal__input:hover + .modal__input-icon,
+.modal__input:focus + .modal__input-icon {
+  fill: var(--accent-color);
+}
+
+
+
+.modal__input-icon {
+  position: absolute;
+  pointer-events: none;
+  left: 12px;
+  top: 11px;
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
+
+.modal__comment {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: 1px solid var(--input-color);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 16px 12px;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.modal__comment::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--comment-color);
+}
+
+.modal__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.modal__agreement-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.modal__checkbox-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-color);
+  border-radius: 2px;
+  background-color: var(--white-color);
+  color: var(--white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__checkbox-icon {
+  fill: currentColor;
+}
+
+.modal__checkbox-status:checked + .modal__checkbox-border {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.modal__agreement-link {
+  color: var(--accent-color);
+}
+
+.modal__agreement-button {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  padding: 10px 52px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px var(--button-shadow-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--hero-button-active);
+  }
+}

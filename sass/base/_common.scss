@@ -1,0 +1,29 @@
+/* Readable Hiding */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+}
+
+.current {
+  color: var(--accent-color);
+}
