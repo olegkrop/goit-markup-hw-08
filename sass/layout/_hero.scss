@@ -1,33 +1,85 @@
 /* Hero */
 
 .hero {
-  
   &__image {
-    background-color: var(--white-color);
-    padding: 200px 0;
-    min-width: 1600px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    min-height: 400px;
+    text-align: center;
+
+    background-color: rgba(196, 196, 196, 1);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    text-align: center;
+      url(../images/hero-mobile.jpeg);
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-color: rgba(196, 196, 196, 1);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-mobile@2x.jpeg);
+    }
+
+    @media screen and (min-width: $tablet) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-desktop.jpeg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-color: rgba(196, 196, 196, 1);
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/hero-desktop@2x.jpeg);
+      }
+    }
   }
 
   &__title {
-    color: var(--white-color);
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+    color: var(--white-color);
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    @media screen and (min-width: $mobile) {
+      width: 360px;
+      font-size: 26px;
+      line-height: 1.6;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.4;
+    }
   }
+  /* color: var(--white-color);
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      text-align: center; */
 
   &__button {
     font-family: inherit;
@@ -53,3 +105,18 @@
     }
   }
 }
+
+/*   
+/*     background-color: var(--white-color);
+    padding: 200px 0;
+    min-width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-desktop.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center; */
