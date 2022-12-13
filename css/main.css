@@ -576,6 +576,7 @@ a {
   display: flex;
   gap: 70px;
   align-items: baseline;
+  flex-direction: column;
 }
 
 /* Footer Logo */
