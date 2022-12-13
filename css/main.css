@@ -52,10 +52,6 @@ a {
   --comment-color: rgba(117, 117, 117, 0.5);
 }
 
-.temp {
-  color: aqua;
-}
-
 /* Readable Hiding */
 .visually-hidden {
   position: absolute;
@@ -229,16 +225,6 @@ a {
 }
 
 /* Hero */
-.hero {
-  /* color: var(--white-color);
-      font-weight: 900;
-      font-size: 44px;
-      line-height: 1.36;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-bottom: 30px;
-      text-align: center; */
-}
 .hero__image {
   display: flex;
   margin-left: auto;
@@ -313,20 +299,6 @@ a {
   cursor: pointer;
 }
 
-/*   
-/*     background-color: var(--white-color);
-    padding: 200px 0;
-    min-width: 1600px;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero-desktop.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    text-align: center; */
 /* Features */
 .features__card {
   height: 120px;
@@ -336,24 +308,11 @@ a {
   background-color: var(--team-background);
   border-radius: 4px;
   margin-bottom: 30px;
-  /*     display: flex;
-  width: 270px;
-  height: 120px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-
-  background-color: var(--team-background); */
 }
 @media screen and (max-width: 767px) {
   .features__card {
     margin-top: 30px;
   }
-}
-.features__list {
-  /*      display: flex;
-  gap: 30px;
-  padding-left: 0;  */
 }
 @media screen and (min-width: 768px) {
   .features__list {
@@ -375,9 +334,6 @@ a {
 @media screen and (min-width: 1200px) {
   .features__item {
     width: 270px;
-    /*       & + & {
-            margin-left: 30px;
-          } */
   }
 }
 .features__title {
@@ -636,7 +592,6 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .footer__block {
-    flex-direction: row;
     gap: 70px;
     align-items: baseline;
   }
