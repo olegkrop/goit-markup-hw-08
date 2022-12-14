@@ -112,6 +112,11 @@ a {
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 767.98px) {
+  .header__block {
+    justify-content: flex-start;
+  }
+}
 .header__nav-link {
   display: block;
   font-weight: 500;
@@ -194,6 +199,15 @@ a {
 
 .current {
   color: var(--accent-color);
+}
+
+.menu__toogle {
+  margin-left: auto;
+}
+@media screen and (min-width: 767.98px) {
+  .menu__toogle {
+    display: none;
+  }
 }
 
 /* Logo */
