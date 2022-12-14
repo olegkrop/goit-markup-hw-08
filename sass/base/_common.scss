@@ -14,13 +14,13 @@
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  @media srceen and (min-width:$mobile) {
+  @media screen and (min-width: $mobile) {
     width: 480px;
   }
-  @media screen and (min-width:$tablet) {
+  @media screen and (min-width: $tablet) {
     width: 768px;
   }
-    @media screen and (min-width:$desktop) {
+  @media screen and (min-width: $desktop) {
     width: 1200px;
   }
 }

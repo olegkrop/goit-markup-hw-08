@@ -10,8 +10,11 @@
   text-align: center;
   &:hover,
   &:focus,
-  .logo--left {
+  &--left {
     color: var(--accent-color);
+  }
+  &--white {
+    color: var(--white-color);
   }
   @media screen and (min-width: $mobile) {
     /*     margin-right: 0;
@@ -21,8 +24,12 @@
     font-size: 26px;
     text-align: left;
   }
-}
-
-.logo--white {
-  color: var(--white-color);
+  &--header {
+    @media screen and (min-width: $mobile) {
+      margin-right: 88px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 93px;
+    }
+  }
 }

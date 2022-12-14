@@ -75,15 +75,15 @@
 
   &__team-photo {
     height: 460px;
-    width: 100%;
-    object-fit: cover;
+/*     width: 100%;
+    object-fit: cover; */
 
     @media screen and (min-width: $tablet) {
-      height: 374px;
+/*       height: 374px; */
     }
 
     @media screen and (min-width: $desktop) {
-      height: 260px;
+/*       height: 260px; */
     }
   }
 
