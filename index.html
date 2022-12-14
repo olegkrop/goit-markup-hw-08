@@ -12,6 +12,9 @@
     <!--Header-->
     <header class="page-header">
       <div class="container">
+        <a class="logo logo--header" href="./index.html"
+          ><span class="logo--left">Web</span>Studio</a
+        >
         <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
@@ -51,12 +54,32 @@
             ></path>
           </svg>
         </button>
-
-        <ul class="mobile-menu">
-          <li><a href="" class="link">About</a></li>
-          <li><a href="" class="link">Products</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-          <li><a href="" class="link">Career</a></li>
+        <div class="mobile__menu-gap">
+          <ul class="mobile-menu">
+            <li><a href="./index.html" class="header__nav-link">Студія</a></li>
+            <li>
+              <a href="./portfolio.html" class="header__nav-link">Портфоліо</a>
+            </li>
+            <li><a href="#contacts" class="header__nav-link">Контакти</a></li>
+          </ul>
+          <ul class="mobile-contacts">
+            <li>
+              <a href="tel:+380961111111" class="header__contacts-link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="header__contacts-link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <ul class="mobile-socials">
+          <li><a href="" class="header__social-link">Instagram</a></li>
+          <li><a href="" class="header__social-link">Twitter</a></li>
+          <li><a href="" class="header__social-link">Facebook</a></li>
+          <li><a href="" class="header__social-link">Linkedin</a></li>
         </ul>
       </div>
     </header>
@@ -67,21 +90,7 @@
           <a class="logo logo--header" href="./index.html"
             ><span class="logo--left">Web</span>Studio</a
           >
-          <button
-            class="menu__toogle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <use href="./images/icons.svg#icon-burger-menu"></use>
-            </svg>
-          </button>
+
           <div class="header__nav">
             <ul class="header__nav-list">
               <li class="header__nav-item">
