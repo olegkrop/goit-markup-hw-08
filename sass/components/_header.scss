@@ -111,10 +111,9 @@
 }
 
 .mobile-phone {
-  @media screen and (max-width: $tablet) {
     color: var(--accent-color);
   }
-}
+
 /* Header Navigation */
 .header__nav-list {
   @media screen and (max-width: $tablet) {
